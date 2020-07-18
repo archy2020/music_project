@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+
+       <meta charset="utf-8">
+       <link rel="shortcut icon" type="image/x-icon" href="fevicon.png">
+		   <link rel="stylesheet" type="text/css" href="style.css">
+		   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		   <meta name="viewport" content="Width=device-width, initial-scale=1">
+	    <!-- <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <meta name="viewport" content="width-device-width, initial scale =1"> -->
+</head>
+
+<body>
+	   
+    <header>
+
+      <div class="topnav">
+          <div class="music-icon">
+              <img src="images/electronic.jpg">
+          <!-- </div> -->
+              <div class="player">
+                <p class="blinking"> Archy Music <br>Studio</p>
+              </div>
+          </div>
+
+          <div class="links">
+            <a class="active" href="#home">Home</a>
+            <a href="#Explore">Explore</a>
+            <a href="#Library">Library</a>
+            <a href="#Favourites">Favourites</a>
+          </div>
+
+        <!-- <div class="fav">
+             <a href="#"><span>Favourites</span></a>
+        </div> -->
+
+        <div class="search">
+            <form class="find" action="index.html">
+              <input type="text" placeholder="Search.." class="searchTerm">
+                <!-- <button type="submit" class="micButton">
+                   <i class="fa fa-microphone"></i>
+                </button> -->
+                <button type="submit" class="searchButton">
+                   <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="dp">
+          <a href="#">
+            <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+            <img src="images/Archana.jpg">
+          </a>
+      </div>
+
+        <div class="bell-icon">
+            <a href="#">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!-- <div class="dp">
+            <a href="#">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </a>
+        </div> -->
+    <!-- adds icon and responsiveness to the header -->
+
+    <div class="responsive-links">
+      <a class="active" href="#home">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </a>
+      <a href="#Explore">
+        <i class="fa fa-object-group" aria-hidden="true"></i></a>
+      <a href="#Library">
+        <i class="fa fa-headphones" aria-hidden="true"></i></a>
+      <a href="#Favourites">
+        <i class="fa fa-heart" aria-hidden="true"></i></a>
+    </div>
+         <div class="responsive-bttn">
+              <button class="dropbtn">
+                 <i class="fa fa-bars"></i>
+              </button>
+              <div class="dropdown-contentS">
+                 <a href="#">Search</a>
+                 <a href="#">Notifications</a>
+                 <a href="#">Favourites</a>
+              </div>
+          </div>
+
+         
+      </div>  
+    </header>
+  
+<!-- main section -->
+<main>
+
+  <!-- carousel part -->
+      <div class="carousel-container"> 
+    			<div class="carousel">
+    				<img class="picture" src="images/LatEng3.jpg" >    				
+          </div>
+          <div class="carousel">
+    				<img class="picture" src="images/LatEng2.jpg" >    				
+    			</div>
+    			<div class="carousel">
+    				<img class="picture" src="images\image1.jpg">
+    			</div>
+    			<div class="carousel">
+    				<img class="picture" src="images\images3.jpg">
+    			</div>
+      </div>
+        <!-- add responsiveness to the card -->
+      <div class="Rcarousel-container"> 
+        <div class="Rcarousel">
+          <img class="picture" src="images/LatEng3.jpg" >    				
+        </div>
+        <div class="Rcarousel">
+          <img class="picture" src="images\image1.jpg">
+        </div>
+    </div>
+	<!-- <section id="LatestRelease"> -->
+
+		  <div class="l-r"> 
+			   <p> Latest Releases</p>
+      </div>
+      
+      <div class="latest-releases">
+	
+        <div class="songs-container">
+          <a href="#show" id="song-play"><img class="image"  src="images\imageslr.jpg"></a>
+          <div class="song-name"><p> Future Nostalgia</p>
+            <p id="date"> May&nbsp;7&nbsp;2020</p></div>
+             <div class="dropdown">
+              <button class="dropbtn">...</button>
+              <div class="dropdown-content">
+                <a href="#">
+                  <i class="fa fa-play"></i>
+                  &nbsp Play Now</a>
+                <a href="#">
+                  <i class="fa fa-plus"></i>
+                  &nbsp Add to Queue</a>
+                <a href="#">
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  &nbsp Add to favourite</a>
+                <a href="#">
+                  <i class="fa fa-info-circle"></i>
+                  &nbsp Get Info</a>
+              </div>
+            </div>
+        </div>
+        <div class="songs-container">
+          <a href="#show" id="song-play"><img class="image"  src="images\imageslr2.jpg"></a>
+          <div class="song-name"><p> Chromatica </p>
+            <p id="date"> May&nbsp;7&nbsp;2020</p></div>
+            <div class="dropdown">
+              <button class="dropbtn">...</button>
+              <div class="dropdown-content">
+                <a href="#">
+                  <i class="fa fa-play"></i>
+                  &nbsp Play Now</a>
+                <a href="#">
+                  <i class="fa fa-plus"></i>
+                  &nbsp Add to Queue</a>
+                <a href="#">
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  &nbsp Add to favourite</a>
+                <a href="#">
+                  <i class="fa fa-info-circle"></i>
+                  &nbsp Get Info</a>
+              </div>
+            </div>
+        </div>
+        <div class="songs-container">
+          <a href="#show" id="song-play">
+            <img class="image"  src="images\imageslr3.jpg">
+          </a>
+          <div class="song-name"><p> Closer </p>
+            <p id="date"> Nov&nbsp;7&nbsp;2019</p></div>
+            <div class="dropdown">
+              <button class="dropbtn">...</button>
+              <div class="dropdown-content">
+                <a href="#">
+                  <i class="fa fa-play"></i>
+                  &nbsp Play Now</a>
+                <a href="#">
+                  <i class="fa fa-plus"></i>
+                  &nbsp Add to Queue</a>
+                <a href="#">
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  &nbsp Add to favourite</a>
+                <a href="#">
+                  <i class="fa fa-info-circle"></i>
+                  &nbsp Get Info</a>
+              </div>
+            </div>
+        </div>
+        <div class="songs-container">
+          <a href="#show" id="song-play"><img class="image"  src="images\imageslr4.jpg"></a>
+          <div class="song-name"><p> After Hours </p>
+            <p id="date"> jan&nbsp;10&nbsp;2020</p></div>
+            <div class="dropdown">
+              <button class="dropbtn">...</button>
+              <div class="dropdown-content">
+                <a href="#">
+                  <i class="fa fa-play"></i>
+                  &nbsp Play Now</a>
+                <a href="#">
+                  <i class="fa fa-plus"></i>
+                  &nbsp Add to Queue</a>
+                <a href="#">
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  &nbsp Add to favourite</a>
+                <a href="#">
+                  <i class="fa fa-info-circle"></i>
+                  &nbsp Get Info</a>
+              </div>
+            </div>
+        </div>
+      </div>
+  <!-- add popular artists div to the page -->
+	<div class="p-a">
+		<p> Popular Artists</p>
+	</div>
+	<div class="artist-container">
+		  <div class="artist-image">
+			     <img src="images/imagespa1.jpg" class="border-radius">
+			          <p> Enrique</p>
+	    </div>
+		  <div class="artist-image">
+			      <img src="images/katyPerry.jpg" class="border-radius">
+			          <p> Katy Perry</p>
+		  </div>
+		  <div class="artist-image">
+			      <img src="images/imagespa1.jpg" class="border-radius">
+			      <p> Enrique</p>
+		  </div>
+		  <div class="artist-image">
+          <img src="images/jenniferLawrence.jpg" class="border-radius">
+			    <p> Jennifer Lawrence</p>
+		  </div>
+		  <div class="artist-image">
+           <a href="page2.html" id="page-2">
+			     <img src="images/imagespa1.jpg" class="border-radius"></a>
+			     <p> Enrique</p>
+	  	</div>
+		  <div class="artist-image ">
+			     <img src="images/justinBieber.jpg" class="border-radius">
+			     <p> Justin Bieber</p>
+		  </div>
+	</div>
+	
+	<!-- adds type of songs div to the page -->
+
+    <div class="anonymus1">
+       <!-- <div class="station">
+             <img src="images\stations.png"> 
+       </div> -->
+       <!-- <div class="container-1"> -->
+        <div class="station">
+          <img src="images\stations.png"> 
+    </div>
+            <div class="anoimage">
+               <img src="images\love.jpg">     
+            </div>
+            <div class="quote">
+               <p> Love</p>
+            </div>
+            <div class="anoimage">
+                <img src="images\retro.jpg">     
+            </div>
+            <div class="quote">
+               <p> Retro</p>
+            </div>
+            <div class="anoimage">
+                <img src="images\workout.jpg">     
+            </div>
+            <div class="quote">
+                <p> Workout</p>
+            </div>
+            <div class="anoimage">
+                <img src="images\rock.jpg">     
+            </div>
+            <div class="quote">
+                <p> Rock</p>
+            </div>
+            <div class="anoimage">
+                <img src="images\pop.jpg">     
+            </div>
+            <div class="quote">
+                 <p>Pop</p>
+            </div>
+        <!-- </div>       -->
+    </div>
+    <div class="anonymus2">
+            <div class="annoimage1">
+               <img src="images\party.jpg">   
+            </div>
+            <div class="text-container">
+              <p> Party</p>
+            </div>
+            <div class="annoimage1">
+               <img src="images\electronic.jpg">     
+            </div>
+            <div class="text-container">
+              <p> Electronics</p>
+            </div>
+            <div class="annoimage1">
+                <img src="images\road.jpg">     
+            </div>
+            <div class="text-container">
+              <p> Road Trip</p>
+            </div>
+    </div>
+    <!-- English -->
+          
+    <div class="p-ae">
+      <p> Latest English</p>
+    </div>
+    <div class="artist-container">
+      <div class="artist-image">
+        <img src="images/LatEng1.jpg">
+        <p id="latest-e-h-p"> <a href="#show" id="song-play">Onism </a><br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng2.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Onism</a> <br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng3.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Onism</a> <br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng4.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Onism</a> <br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng5.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play"> Onism</a> <br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng3.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play"> Onism </a><br> Aug 11,2017</p>
+      </div>
+    </div>
+    <div class="p-a p-h">
+      <p> Latest Hindi</p>
+    </div>
+    <div class="artist-container">
+      <div class="artist-image">
+        <img src="images/LatEng1.jpg">
+        <p id="latest-e-h-p"> <a href="#show" id="song-play"> Bekhayali </a><br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng2.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Bekhayali</a> <br> Aug 11,2017</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng3.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Bekhayali</a><br> Aug 11,2019</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng4.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Bekhayali</a><br> Aug 11,2019</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng5.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Bekhayali</a><br> Aug 11,20179</p>
+      </div>
+      <div class="artist-image">
+        <img src="images/LatEng3.jpg">
+        <p id="latest-e-h-p"><a href="#show" id="song-play">Bekhayali </a><br> Aug 11,2019</p>
+      </div>
+    </div>
+    <!-- adds music player to the webpage-->
+<section id="music-player">
+	<div id="show" class="container-audio">
+		<!-- <audio controls  loop autoplay > -->
+    <audio controls>
+			<!-- <source src="Closer.mp3" type="audio/ogg"> -->
+        <source src="mySong.mp3" type="audio/ogg">
+        Your browser dose not Support the audio Tag
+		</audio>
+		
+	</div>
+	
+</section>
+
+
+</main>
+
+     <aside class="aside">
+      <span class="mainPara"> <b>Queue</b></span>
+        <!-- <span class="sidePara"> <b>Queue</b></span> -->
+
+        <div class="queuedown">
+          <button class="queuebtn">Queue<a href="#">
+            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+          </a></button>
+          <div class="queuedown-content">
+            <a href="#"&nbsp>Play List</a> <br>
+            <a href="#">Favourite Song</a>
+          </div>
+          </div>
+      
+      <ul class="playlist-hidden">
+    
+            <li><span id="num">01.mp3</span>
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>02.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>03.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>04.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>05.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>06.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>07.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>08.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>09.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>01.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>02.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>03.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>04.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>05.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>06.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>07.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>08.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>09.mp3
+              <img src="images/image1.jpg">
+              <span class="spaces">Artist1       </span>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+               </a>
+            </li>
+            
+            
+        </ul>
+        
+    </aside>  
+</body>
+</html>
